@@ -12,8 +12,9 @@
   --text-2: #1F2937;
   --muted: #5B6573;
   --dim: #8A92A0;
-  --brand: #0E2A47;
-  --brand-2: #16386F;
+  --brand: #4A5BA8;
+  --brand-2: #3A4B98;
+  --cyan: #29C0DF;
   --accent: #E8472C;
   --accent-soft: #FCE9E2;
   --ok: #128A6E;
@@ -69,6 +70,7 @@ input, textarea, select { font: inherit; color: inherit; }
 .eyebrow::before {
   content: ""; width: 24px; height: 1px; background: var(--line-strong);
 }
+.cyan { color: var(--cyan); }
 
 h1, h2, h3, h4, h5 {
   font-family: var(--font); font-weight: 700; color: var(--text);
@@ -192,7 +194,7 @@ p.lead { font-size: clamp(16px, 1.3vw, 18px); color: var(--muted); line-height: 
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background:
     radial-gradient(60% 50% at 85% 15%, rgba(232, 71, 44, 0.06), transparent 60%),
-    radial-gradient(40% 40% at 0% 100%, rgba(14, 42, 71, 0.04), transparent 60%);
+    radial-gradient(40% 40% at 0% 100%, rgba(74, 91, 168, 0.04), transparent 60%);
 }
 .hero-grid {
   position: relative; z-index: 2;
