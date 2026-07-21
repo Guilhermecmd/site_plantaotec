@@ -1,9 +1,4 @@
-# Instruções para agentes
+﻿# Instruções do agente
 
-1. Leia `PROJECT_STATE.md`.
-2. Leia `CLAUDE.md`.
-3. Consulte `docs/MAP.md`.
-4. Consulte `docs/LESSONS.md`.
-5. Abra `docs/PROJECT_REFERENCE.md` somente sob demanda.
-
-Preserve alterações locais e não declare conclusão sem testes e revisão do diff.
+Leia [CLAUDE.md](CLAUDE.md). É tudo — as mesmas instruções para qualquer
+agente, sem variante por ferramenta.
