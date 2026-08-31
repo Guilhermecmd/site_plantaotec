@@ -2,7 +2,12 @@
 
 ## Status
 
-Site institucional em produção (branch `master`, `origin/master` em dia, working tree limpo). Redesign completo v1 (2026-05-12/13) implementado e commitado; sem trabalho em andamento no momento desta leitura.
+Site institucional em produção (branch `master`). Redesign completo v1 (2026-05-12/13) implementado; fatia de SEO + limpeza de conteúdo aplicada em 2026-08-31.
+
+**Atenção — infra quebrada (fora do repositório, pendente com o operador):**
+- O VPS de produção (`5.78.156.26`) está fora do ar (confirmado pelo operador em 2026-08-31).
+- O DNS de `www.plantaotec.com.br` aponta para `187.73.33.31` — um servidor de terceiros que responde 403 com certificado TLS errado. O apex aponta para o VPS correto. Corrigir o registro DNS do `www` é pré-requisito: canonical, og:url, JSON-LD e sitemap declaram `www` como host canônico.
+- Depois do DNS: configurar 301 do apex → `www` (hoje o Traefik serve os dois hosts com 200, conteúdo duplicado).
 
 ## Fase atual
 
@@ -20,10 +25,21 @@ Pós-redesign / manutenção incremental. O plano de redesign (`docs/superpowers
 - Botão "Área do Cliente" no nav (desktop + painel mobile), linkando para `chamados.plantaotec.com.br`.
 - Docker: `docker-compose.dev.yml` (nginx:alpine, porta 8888, volumes montados para hot-reload local) e `docker-compose.yml` (produção, Traefik com TLS via Let's Encrypt para `plantaotec.com.br`/`www.plantaotec.com.br`).
 
+## Fatia de 2026-08-31 — SEO + limpeza de conteúdo público
+
+- **Seções `#clientes` e `#depoimentos` removidas do HTML** por decisão do operador: eram placeholders ("Cliente 01..08", depoimentos de exemplo) e uma nota interna de rascunho estava visível ao público. Recuperar via histórico git quando houver logos/depoimentos reais autorizados. O CSS das seções (`.clients-*`, `.testi*`) foi mantido para o retorno.
+- SEO on-page: title keyword-first (≤62 chars), meta description reescrita, `meta keywords` removida, `og:url` + dimensões da og:image, JSON-LD com `image`, `logo` e `openingHoursSpecification`.
+- `robots.txt` e `sitemap.xml` criados (host `www`), copiados no `Dockerfile` e montados no compose dev.
+- `nginx.conf`: `try_files` com `=404` (fim do soft-404), header HSTS nos 3 blocos, gzip para xml/txt.
+- Performance: `fetchpriority="high"` no hero, `loading="lazy"` em about-team e logo do footer, peso 300 removido do Google Fonts (não usado no CSS).
+- H2 do `#sobre` agora carrega "Conceição do Mato Dentro"; ano do rodapé tem fallback "2026" sem JS.
+- Verificado no dev (porta 8888): home/robots/sitemap 200, rota inexistente 404, zero placeholders no HTML servido.
+
 ## Ainda não implementado
 
-- **Carrossel de Clientes**: ainda usa placeholders (`Cliente 01`…`Cliente 08`) em `index.html#clientes` — comentário no HTML já documenta como substituir por `<img>` reais, faltam os logos dos clientes.
-- **Depoimentos**: os 3 cards em `index.html#depoimentos` são textos anônimos de exemplo, com nota explícita no HTML para substituir por depoimentos reais após autorização do cliente.
+- **Carrossel de Clientes** (seção removida em 2026-08-31): faltam os logos reais autorizados para restaurar via git.
+- **Depoimentos** (seção removida em 2026-08-31): faltam 2-3 depoimentos reais com autorização para restaurar via git.
+- **Google Search Console + Google Business Profile**: cadastrar quando o site voltar ao ar — maior alavanca de aquisição local; fora do repositório.
 - Itens marcados como "fora de escopo" no spec original (`docs/superpowers/specs/2026-05-12-site-plantaotec-redesign.md`) e nunca retomados: páginas internas por serviço, blog/área de conteúdo, integração do formulário com CRM/backend, animações adicionais além do `reveal on scroll` existente.
 
 ## Próxima fatia recomendada
