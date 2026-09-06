@@ -3,8 +3,9 @@
 ## Status
 
 Site institucional em produção (branch `master`). Redesign v1 (2026-05), fatia
-de SEO (2026-08-31) e **auditoria + refatoração completa (2026-09-06)** na
-branch `auditoria-refatoracao`, pronta para merge em `dev` → `master`.
+de SEO (2026-08-31) e **auditoria + refatoração completa (2026-09-06)**,
+mergeada em `master` (e `dev` alinhada) a pedido do operador. Falta apenas
+build + deploy da imagem quando o VPS voltar.
 
 **Atenção — infra quebrada (fora do repositório, pendente com o operador):**
 - O VPS de produção (`5.78.156.26`) está fora do ar (confirmado em 2026-08-31).
@@ -16,8 +17,8 @@ branch `auditoria-refatoracao`, pronta para merge em `dev` → `master`.
 
 ## Fase atual
 
-Pós-auditoria. Próximo passo é o operador revisar visualmente na porta 8888,
-fazer merge e publicar a imagem (`docker build` + `docker stack deploy`).
+Pós-auditoria, já em `master`. Próximo passo é publicar a imagem
+(`docker build` + `docker stack deploy`) quando o VPS estiver de pé.
 
 ## Métricas da fatia 2026-09-06 (Lighthouse, dev local)
 
