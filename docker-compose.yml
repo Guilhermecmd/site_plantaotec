@@ -15,15 +15,13 @@ services:
         - traefik.http.routers.site.entrypoints=websecure
         - traefik.http.routers.site.tls.certresolver=letsencryptresolver
         - traefik.http.services.site.loadbalancer.server.port=80
-        - traefik.http.routers.site.middlewares=site-https
+        - traefik.http.routers.site.middlewares=site-https,site-www
         - traefik.http.middlewares.site-https.headers.sslproxyheaders.X-Forwarded-Proto=https
-        # 301 apex -> www (host canônico do canonical/sitemap/JSON-LD).
-        # Só ativar depois que o DNS de www.plantaotec.com.br apontar para este servidor;
-        # hoje www resolve para um IP de terceiros e o redirect derrubaria o site.
-        # - traefik.http.routers.site.middlewares=site-https,site-www
-        # - traefik.http.middlewares.site-www.redirectregex.regex=^https?://plantaotec\.com\.br/(.*)
-        # - traefik.http.middlewares.site-www.redirectregex.replacement=https://www.plantaotec.com.br/$${1}
-        # - traefik.http.middlewares.site-www.redirectregex.permanent=true
+        # 301 apex -> www (host canônico do canonical/sitemap/JSON-LD). DNS do www
+        # confirmado em 2026-09-06 apontando para este servidor.
+        - traefik.http.middlewares.site-www.redirectregex.regex=^https?://plantaotec\.com\.br/(.*)
+        - traefik.http.middlewares.site-www.redirectregex.replacement=https://www.plantaotec.com.br/$${1}
+        - traefik.http.middlewares.site-www.redirectregex.permanent=true
 
 networks:
   network_public:

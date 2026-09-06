@@ -7,18 +7,20 @@ de SEO (2026-08-31) e **auditoria + refatoração completa (2026-09-06)**,
 mergeada em `master` (e `dev` alinhada) a pedido do operador. Falta apenas
 build + deploy da imagem quando o VPS voltar.
 
-**Atenção — infra quebrada (fora do repositório, pendente com o operador):**
-- O VPS de produção (`5.78.156.26`) está fora do ar (confirmado em 2026-08-31).
-- O DNS de `www.plantaotec.com.br` aponta para `187.73.33.31` (terceiros, 403,
-  TLS errado). O apex aponta para o VPS correto. Corrigir o registro DNS do
-  `www` é pré-requisito: canonical, og:url, JSON-LD e sitemap usam `www`.
-- Depois do DNS: ativar o 301 apex → `www` (labels Traefik já escritas,
-  comentadas, em `docker-compose.yml`).
+**Infra (verificado em 2026-09-06, fim do dia):**
+- VPS `5.78.156.26` de pé; apex e `www` resolvem para ele, TLS válido nos dois,
+  HTTP → HTTPS já em 301 pelo Traefik.
+- 301 apex → `www` **ativado** nas labels do `docker-compose.yml`
+  (middleware `site-www`); entra em vigor no próximo `docker stack deploy`.
+- Produção ainda serve a versão anterior à auditoria (CSP com
+  `unsafe-inline`, Google Fonts): falta build + deploy da imagem.
 
 ## Fase atual
 
-Pós-auditoria, já em `master`. Próximo passo é publicar a imagem
-(`docker build` + `docker stack deploy`) quando o VPS estiver de pé.
+Pós-auditoria, já em `master`. Próximo passo é publicar a imagem no VPS:
+`docker build -t plantaotec-site:latest .` e `docker stack deploy -c
+docker-compose.yml <stack>`; depois conferir `curl -I https://plantaotec.com.br/`
+(esperado 301 para `www`) e a CSP nova em `https://www.plantaotec.com.br/`.
 
 ## Métricas da fatia 2026-09-06 (Lighthouse, dev local)
 
@@ -102,7 +104,7 @@ AVIF 11 KB / WebP 19 KB com `srcset`.
 
 ## Ainda não implementado / depende do responsável
 
-- **DNS do `www` + 301 apex → www** (ver "Atenção").
+- **Deploy** da imagem nova no VPS (ver "Fase atual").
 - **Google Search Console** (verificar domínio via DNS, enviar sitemap) e
   **Google Business Profile** (NAP igual ao JSON-LD). Maior alavanca local.
 - **GTM/GA4**: seguir `docs/MEDICAO.md`; exige ajustar a CSP e a política.
@@ -120,7 +122,6 @@ AVIF 11 KB / WebP 19 KB com `srcset`.
 
 ## Próxima fatia recomendada
 
-1. Operador: revisar em `localhost:8888`, merge em `dev` e `master`, build e
-   deploy quando o VPS voltar; corrigir DNS do `www`; ativar o 301.
+1. Operador: build e deploy no VPS; confirmar o 301 apex → www e a CSP nova.
 2. Cadastrar Search Console + Business Profile (sem código).
 3. Coletar CNPJ/endereço e 3 depoimentos autorizados → fatia de confiança.
