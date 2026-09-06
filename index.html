@@ -1,222 +1,320 @@
-﻿<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#FFFFFF" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFFFFF">
 
   <title>Suporte de TI em Conceição do Mato Dentro | Plantão Tecnologia</title>
-  <meta name="description" content="TI gerenciada com SLA em contrato para empresas de Conceição do Mato Dentro e região: suporte, segurança, nuvem AWS, backup e automação. Fale com a Plantão." />
-  <meta name="author" content="Plantão Tecnologia" />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Suporte e gestão de TI com SLA em contrato para empresas de Conceição do Mato Dentro e região: helpdesk, servidores e redes, segurança, backup, nuvem AWS e automação. Fale com a Plantão.">
+  <meta name="author" content="Plantão Tecnologia">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:title" content="Plantão Tecnologia — TI que mantém sua empresa funcionando" />
-  <meta property="og:description" content="TI gerenciada, segurança, nuvem AWS, agentes de IA e automação para empresas em Conceição do Mato Dentro e região." />
-  <meta property="og:site_name" content="Plantão Tecnologia" />
-  <meta property="og:url" content="https://www.plantaotec.com.br/" />
+  <link rel="canonical" href="https://www.plantaotec.com.br/">
 
-  <meta property="og:image" content="https://www.plantaotec.com.br/assets/og-image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Plantão Tecnologia">
+  <meta property="og:url" content="https://www.plantaotec.com.br/">
+  <meta property="og:title" content="Suporte e gestão de TI em Conceição do Mato Dentro | Plantão Tecnologia">
+  <meta property="og:description" content="TI gerenciada com SLA em contrato, segurança, backup, nuvem AWS e automação para empresas de Conceição do Mato Dentro e região.">
+  <meta property="og:image" content="https://www.plantaotec.com.br/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Plantão Tecnologia — TI que mantém sua empresa funcionando">
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Plantão Tecnologia — TI gerenciada" />
-  <meta name="twitter:description" content="TI, segurança, nuvem e IA para empresas da região." />
-  <meta name="twitter:image" content="https://www.plantaotec.com.br/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Suporte e gestão de TI em Conceição do Mato Dentro | Plantão Tecnologia">
+  <meta name="twitter:description" content="TI gerenciada com SLA em contrato, segurança, backup, nuvem AWS e automação para empresas da região.">
+  <meta name="twitter:image" content="https://www.plantaotec.com.br/assets/og-image.jpg">
 
-  <link rel="canonical" href="https://www.plantaotec.com.br/" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=20260906">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Plantão Tecnologia",
-    "description": "Serviços de TI para empresas em Conceição do Mato Dentro e região: suporte, servidores, segurança, nuvem AWS, IA e automação.",
-    "url": "https://www.plantaotec.com.br/",
-    "image": "https://www.plantaotec.com.br/assets/og-image.jpg",
-    "logo": "https://www.plantaotec.com.br/assets/logo.png",
-    "telephone": "+55-31-97131-7496",
-    "email": "contato@plantaotec.com.br",
-    "areaServed": "Conceição do Mato Dentro, MG e região",
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "08:00",
-      "closes": "18:00"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Conceição do Mato Dentro",
-      "addressRegion": "MG",
-      "addressCountry": "BR"
-    },
-    "sameAs": [
-      "https://www.instagram.com/plantaotecnologia/",
-      "https://www.linkedin.com/company/102269554"
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@id": "https://www.plantaotec.com.br/#empresa",
+        "name": "Plantão Tecnologia",
+        "description": "Suporte e gestão de TI para empresas em Conceição do Mato Dentro e região: helpdesk, servidores e redes, segurança, backup, nuvem AWS, IA e automação, consultoria e criação de sites.",
+        "url": "https://www.plantaotec.com.br/",
+        "image": "https://www.plantaotec.com.br/assets/og-image.jpg",
+        "logo": "https://www.plantaotec.com.br/assets/logo.png",
+        "telephone": "+55-31-97131-7496",
+        "email": "contato@plantaotec.com.br",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Conceição do Mato Dentro",
+          "addressRegion": "MG",
+          "addressCountry": "BR"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Conceição do Mato Dentro" },
+          { "@type": "State", "name": "Minas Gerais" },
+          { "@type": "Country", "name": "Brasil" }
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+55-31-97131-7496",
+          "email": "contato@plantaotec.com.br",
+          "availableLanguage": "Portuguese",
+          "areaServed": "BR"
+        },
+        "sameAs": [
+          "https://www.instagram.com/plantaotecnologia/",
+          "https://www.linkedin.com/company/102269554"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de TI",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Suporte e TI gerenciada", "url": "https://www.plantaotec.com.br/#suporte-ti", "serviceType": "Suporte técnico e helpdesk com SLA" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Infraestrutura e redes", "url": "https://www.plantaotec.com.br/#infraestrutura", "serviceType": "Servidores, virtualização, cabeamento e Wi-Fi corporativo" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Segurança da informação", "url": "https://www.plantaotec.com.br/#seguranca", "serviceType": "Firewall, EDR, VPN, hardening e adequação à LGPD" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Backup e continuidade", "url": "https://www.plantaotec.com.br/#backup", "serviceType": "Backup 3-2-1, replicação em nuvem e plano de recuperação de desastres" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nuvem AWS", "url": "https://www.plantaotec.com.br/#nuvem-aws", "serviceType": "Migração, arquitetura, FinOps e operação na AWS" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IA e automação", "url": "https://www.plantaotec.com.br/#ia-automacao", "serviceType": "Agentes de IA, bots e automação de processos" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoria de TI", "url": "https://www.plantaotec.com.br/#consultoria", "serviceType": "Diagnóstico, planejamento e projetos pontuais" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Criação de sites", "url": "https://www.plantaotec.com.br/#sites", "serviceType": "Sites institucionais, landing pages e lojas virtuais" } }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.plantaotec.com.br/#site",
+        "url": "https://www.plantaotec.com.br/",
+        "name": "Plantão Tecnologia",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://www.plantaotec.com.br/#empresa" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.plantaotec.com.br/#pagina",
+        "url": "https://www.plantaotec.com.br/",
+        "name": "Suporte de TI em Conceição do Mato Dentro | Plantão Tecnologia",
+        "isPartOf": { "@id": "https://www.plantaotec.com.br/#site" },
+        "about": { "@id": "https://www.plantaotec.com.br/#empresa" },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.plantaotec.com.br/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vocês atendem só em Conceição do Mato Dentro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "O atendimento presencial é em Conceição do Mato Dentro e região. Suporte remoto, nuvem, automação e criação de sites são atendidos para empresas de todo o Brasil." }
+          },
+          {
+            "@type": "Question",
+            "name": "Preciso fechar um contrato mensal para ser atendido?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Não. A TI gerenciada funciona por contrato com SLA, mas consultoria, diagnóstico de ambiente e projetos pontuais são contratados sem compromisso mensal." }
+          },
+          {
+            "@type": "Question",
+            "name": "O que é SLA e por que ele está em contrato?",
+            "acceptedAnswer": { "@type": "Answer", "text": "SLA é o acordo de nível de serviço: define prazos de resposta e de solução para cada tipo de chamado. Ele fica escrito no contrato para que você saiba o que esperar, sem depender da boa vontade do fornecedor." }
+          },
+          {
+            "@type": "Question",
+            "name": "Minha empresa é pequena. Faz sentido contratar a Plantão?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sim. Cada frente de serviço pode ser contratada em separado e a infraestrutura é dimensionada pelo seu volume real, não por uma empresa dez vezes maior." }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o primeiro contato?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Você conta o que está acontecendo pelo WhatsApp ou pelo formulário. Em seguida agendamos um diagnóstico técnico, por visita ou chamada, e só depois enviamos uma proposta com escopo, SLA e investimento definidos." }
+          },
+          {
+            "@type": "Question",
+            "name": "Como é o suporte no dia a dia?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Os chamados são abertos pela Área do Cliente ou pelo WhatsApp, atendidos de forma remota ou em campo dentro do SLA combinado, e você recebe relatórios periódicos de funcionamento do ambiente." }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual é o horário de atendimento?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Atendimento humano de segunda a sexta, das 8h às 18h. Janelas diferentes são combinadas em contrato conforme o SLA." }
+          }
+        ]
+      }
     ]
   }
   </script>
-
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <!-- ============== NAV ============== -->
   <header class="nav" id="nav">
     <div class="container nav-inner">
 
-      <a href="#home" class="logo" aria-label="Plantão Tecnologia">
-        <img src="assets/logo.png" alt="Plantão Tecnologia" height="56" style="display:block;">
+      <a href="#home" class="logo" aria-label="Plantão Tecnologia — início">
+        <picture>
+          <source srcset="assets/logo-nav.webp" type="image/webp">
+          <img src="assets/logo-nav.png" alt="Plantão Tecnologia" width="162" height="64">
+        </picture>
       </a>
 
       <nav aria-label="Principal">
         <ul class="nav-links">
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#diferenciais">Diferenciais</a></li>
-          <li><a href="#processo">Processo</a></li>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
 
       <div class="nav-cta">
-        <a class="btn btn-outline btn-desktop" href="https://chamados.plantaotec.com.br/front/central.php" target="_blank" rel="noopener">Área do Cliente</a>
-        <a class="btn btn-primary btn-desktop" href="#contato">Fale Conosco <span class="arrow">→</span></a>
-        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilePanel">
+        <a class="btn btn-outline btn-desktop" href="https://chamados.plantaotec.com.br/front/central.php" target="_blank" rel="noopener" data-track="area_cliente" data-track-label="nav">Área do Cliente</a>
+        <a class="btn btn-primary btn-desktop" href="#contato" data-track="cta_click" data-track-label="nav">Solicitar diagnóstico <span class="arrow" aria-hidden="true">→</span></a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilePanel">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+  <nav class="mobile-panel" id="mobilePanel" aria-label="Menu móvel" hidden inert>
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre</a>
-    <a href="#diferenciais">Diferenciais</a>
-    <a href="#processo">Processo</a>
+    <a href="#processo">Como funciona</a>
+    <a href="#faq">Dúvidas frequentes</a>
     <a href="#contato">Contato</a>
-    <a class="btn btn-primary" href="#contato">Fale Conosco</a>
-    <a class="btn btn-outline" href="https://wa.me/5531971317496" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn btn-outline" href="https://chamados.plantaotec.com.br/front/central.php" target="_blank" rel="noopener">Área do Cliente</a>
-  </div>
+    <a class="btn btn-primary" href="#contato" data-track="cta_click" data-track-label="menu_mobile">Solicitar diagnóstico</a>
+    <a class="btn btn-wa" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Plant%C3%A3o%20Tecnologia." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="menu_mobile">Falar no WhatsApp</a>
+    <a class="btn btn-outline" href="https://chamados.plantaotec.com.br/front/central.php" target="_blank" rel="noopener" data-track="area_cliente" data-track-label="menu_mobile">Área do Cliente</a>
+  </nav>
 
+  <main id="conteudo">
   <!-- ============== HERO ============== -->
-  <main id="home">
-  <section class="hero">
+  <section class="hero" id="home" aria-labelledby="hero-titulo">
     <div class="container">
       <div class="hero-grid">
         <div>
-          <span class="eyebrow reveal">Conceição do Mato Dentro · MG e Região</span>
-          <h1 class="reveal delay-1">
-            Enquanto você foca no negócio,<br>
-            a Plantão <span class="cyan">cuida da TI.</span>
+          <span class="eyebrow reveal">Conceição do Mato Dentro · MG</span>
+          <h1 class="reveal delay-1" id="hero-titulo">
+            Suporte e gestão de TI para empresas que <span class="cyan">não podem parar.</span>
           </h1>
           <p class="hero-sub reveal delay-2">
-            Empresas que param de improvisar TI crescem mais rápido. Assumimos sua operação com contrato, SLA e atendimento humano de quem está aqui.
+            Atendimento local em Conceição do Mato Dentro e região, com contrato, SLA definido e uma equipe que conhece o seu ambiente. Suporte, infraestrutura, segurança, backup e nuvem AWS em um só parceiro.
           </p>
           <div class="hero-cta reveal delay-3">
-            <a class="btn btn-primary btn-lg" href="#contato">Fale Conosco <span class="arrow">→</span></a>
-            <a class="btn btn-outline btn-lg" href="#servicos">Ver soluções</a>
+            <a class="btn btn-primary btn-lg" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20a%20TI%20da%20minha%20empresa." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="hero">
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.5.7 4.9 2 7L3 29l6.7-2.3c2 1.1 4.3 1.7 6.6 1.7 6.9 0 12.5-5.5 12.5-12.5C28.8 8.6 23.2 3 16 3zm0 22.7c-2 0-4-.6-5.7-1.6l-.4-.2-4 1.4 1.4-3.9-.3-.4c-1.2-1.8-1.8-3.9-1.8-6.1 0-5.9 4.8-10.7 10.8-10.7 2.9 0 5.6 1.1 7.6 3.1 2 2 3.1 4.7 3.1 7.6 0 5.9-4.8 10.8-10.7 10.8zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
+              Falar no WhatsApp
+            </a>
+            <a class="btn btn-outline btn-lg" href="#servicos">Ver serviços</a>
           </div>
+          <p class="hero-note reveal delay-4">Atendimento humano de segunda a sexta, das 8h às 18h. Sem robô de triagem.</p>
         </div>
 
-        <aside class="reveal delay-2" aria-label="Imagem institucional">
-          <img src="assets/hero-visual.jpg"
-               alt="Equipe da Plantão Tecnologia em atuação"
-               width="900"
-               height="700"
-               fetchpriority="high"
-               style="width:100%;height:auto;border-radius:20px;box-shadow:0 24px 48px -16px rgba(74,91,168,0.18);">
-        </aside>
+        <div class="hero-visual reveal delay-2">
+          <picture>
+            <source type="image/avif" srcset="assets/hero-visual-480.avif 480w, assets/hero-visual-900.avif 900w" sizes="(max-width: 980px) 100vw, 40vw">
+            <source type="image/webp" srcset="assets/hero-visual-480.webp 480w, assets/hero-visual-900.webp 900w" sizes="(max-width: 980px) 100vw, 40vw">
+            <img src="assets/hero-visual.jpg" alt="Ilustração de um técnico da Plantão Tecnologia monitorando servidores e painéis de rede" width="900" height="700" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
       </div>
 
-      <div class="hero-trust reveal delay-4">
+      <dl class="hero-trust reveal delay-4">
         <div class="hero-trust-cell">
-          <div class="k">Atuação</div>
-          <div class="v">Conceição do Mato Dentro e região</div>
+          <dt class="label">Onde</dt>
+          <dd class="v">Conceição do Mato Dentro e região</dd>
         </div>
         <div class="hero-trust-cell">
-          <div class="k">Foco</div>
-          <div class="v">TI gerenciada para empresas</div>
+          <dt class="label">Para quem</dt>
+          <dd class="v">Empresas que dependem de TI para operar</dd>
         </div>
         <div class="hero-trust-cell">
-          <div class="k">Stack</div>
-          <div class="v">Infra · Cloud · Segurança · IA</div>
+          <dt class="label">O que</dt>
+          <dd class="v">Suporte · Infra · Segurança · Nuvem · IA</dd>
         </div>
         <div class="hero-trust-cell">
-          <div class="k">Modelo</div>
-          <div class="v">Atendimento local + acesso remoto</div>
+          <dt class="label">Como</dt>
+          <dd class="v">Contrato com SLA, presencial e remoto</dd>
         </div>
-      </div>
+      </dl>
     </div>
   </section>
 
   <!-- ============== SERVIÇOS ============== -->
-  <section class="section" id="servicos">
+  <section class="section" id="servicos" aria-labelledby="servicos-titulo">
     <div class="container">
       <header class="section-head reveal">
-        <span class="eyebrow">Soluções</span>
-        <h2>Áreas de atuação que cobrem o <span class="accent">ciclo completo</span> da TI da sua empresa.</h2>
-        <p class="lead">Cada frente abaixo agrupa serviços que entregamos juntos ou em separado, conforme sua necessidade. Você contrata só o que precisa — com a profundidade que o seu cenário exige.</p>
+        <span class="eyebrow">Serviços</span>
+        <h2 id="servicos-titulo">Oito frentes que cobrem o <span class="accent">ciclo completo</span> da TI da sua empresa.</h2>
+        <p class="lead">Você contrata só o que precisa, em conjunto ou em separado, com a profundidade que o seu cenário exige. Toque em uma frente para falar direto com a gente sobre ela.</p>
       </header>
 
       <div class="services-grid">
 
-        <article class="service reveal">
+        <article class="card card-hover service reveal" id="suporte-ti">
           <div class="service-head">
-            <div class="service-icon" aria-hidden="true">
+            <div class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/><path d="M12 7v5l3 2"/></svg>
             </div>
             <span class="service-num">01</span>
           </div>
-          <h3>Sua TI operada. Sua equipe, livre.</h3>
+          <h3>Suporte e TI gerenciada</h3>
           <p>Você para de resolver chamado de TI e passa a receber relatório de funcionamento. A Plantão assume a operação com SLA acordado e atendimento humano de quem está aqui.</p>
-          <ul class="service-subs">
+          <ul class="check-list">
             <li>Helpdesk e atendimento técnico</li>
             <li>Atendimento em campo e remoto</li>
             <li>Gestão de chamados com SLA</li>
             <li>Inventário, documentação e governança</li>
             <li>Relatórios periódicos de funcionamento</li>
           </ul>
-          <a class="service-link" href="#contato">Falar sobre suporte <span>→</span></a>
+          <a class="text-link" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20suporte%20e%20TI%20gerenciada." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="servico_suporte">Falar sobre suporte <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="service reveal delay-1">
+        <article class="card card-hover service reveal delay-1" id="infraestrutura">
           <div class="service-head">
-            <div class="service-icon" aria-hidden="true">
+            <div class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><circle cx="7" cy="7" r="0.6" fill="currentColor"/><circle cx="7" cy="17" r="0.6" fill="currentColor"/></svg>
             </div>
             <span class="service-num">02</span>
           </div>
-          <h3>Base técnica que aguenta crescer.</h3>
-          <p>Servidores, rede, Wi-Fi e cabeamento projetados para o seu volume real — não para uma empresa dez vezes maior. Tudo documentado e com suporte contínuo.</p>
-          <ul class="service-subs">
+          <h3>Infraestrutura e redes</h3>
+          <p>Servidores, rede, Wi-Fi e cabeamento projetados para o seu volume real, não para uma empresa dez vezes maior. Tudo documentado e com suporte contínuo.</p>
+          <ul class="check-list">
             <li>Servidores físicos e virtuais</li>
             <li>Virtualização (VMware / Hyper-V)</li>
             <li>Cabeamento estruturado e fibra</li>
             <li>Wi-Fi corporativo</li>
             <li>Switches e equipamentos de rede</li>
           </ul>
-          <a class="service-link" href="#contato">Falar sobre infraestrutura <span>→</span></a>
+          <a class="text-link" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20infraestrutura%20e%20redes." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="servico_infraestrutura">Falar sobre infraestrutura <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="service reveal delay-2">
+        <article class="card card-hover service reveal delay-2" id="seguranca">
           <div class="service-head">
-            <div class="service-icon" aria-hidden="true">
+            <div class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v6c0 5-4 7.5-8 8-4-.5-8-3-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg>
             </div>
             <span class="service-num">03</span>
           </div>
-          <h3>Proteção antes do incidente.</h3>
-          <p>Firewall, EDR e processo de resposta a incidentes. Recuperar dados após um ataque custa dez vezes mais do que prevenir. Conformidade com LGPD inclusa.</p>
-          <ul class="service-subs">
+          <h3>Segurança da informação</h3>
+          <p>Firewall, EDR e processo de resposta a incidentes. Recuperar dados depois de um ataque custa muito mais do que prevenir. Adequação à LGPD inclusa.</p>
+          <ul class="check-list">
             <li>Firewall corporativo (UTM / NGFW)</li>
             <li>VPN e acesso remoto seguro</li>
             <li>EDR / antivírus gerenciado</li>
@@ -224,103 +322,103 @@
             <li>Monitoramento e resposta a incidentes</li>
             <li>Adequação à LGPD</li>
           </ul>
-          <a class="service-link" href="#contato">Falar sobre segurança <span>→</span></a>
+          <a class="text-link" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20seguran%C3%A7a%20da%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="servico_seguranca">Falar sobre segurança <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="service reveal">
+        <article class="card card-hover service reveal" id="backup">
           <div class="service-head">
-            <div class="service-icon" aria-hidden="true">
+            <div class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a3 3 0 0 1-3 3H6a3 3 0 1 1 .5-5.95A5 5 0 0 1 16.5 11a3 3 0 0 1 4.5 4z"/><path d="M12 13v6M9 16l3-3 3 3"/></svg>
             </div>
             <span class="service-num">04</span>
           </div>
-          <h3>Quando algo falhar, você está de pé.</h3>
-          <p>Backup testado, não só configurado. Regra 3-2-1, replicação em nuvem e plano de recuperação com RPO e RTO definidos — você sabe exatamente o tempo de retorno.</p>
-          <ul class="service-subs">
+          <h3>Backup e continuidade</h3>
+          <p>Backup testado, não só configurado. Regra 3-2-1, replicação em nuvem e plano de recuperação com RPO e RTO definidos: você sabe exatamente o tempo de retorno.</p>
+          <ul class="check-list">
             <li>Backup local + off-site (regra 3-2-1)</li>
             <li>Replicação para nuvem</li>
-            <li>Plano de Recuperação de Desastres (DR)</li>
-            <li>Testes periódicos de restore</li>
+            <li>Plano de recuperação de desastres (DR)</li>
+            <li>Testes periódicos de restauração</li>
             <li>RPO e RTO acordados em contrato</li>
           </ul>
-          <a class="service-link" href="#contato">Falar sobre backup <span>→</span></a>
+          <a class="text-link" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20backup%20e%20continuidade." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="servico_backup">Falar sobre backup <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="service reveal delay-1">
+        <article class="card card-hover service reveal delay-1" id="nuvem-aws">
           <div class="service-head">
-            <div class="service-icon" aria-hidden="true">
+            <div class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a3 3 0 0 1-3 3H6a3 3 0 1 1 .5-5.95A5 5 0 0 1 16.5 11a3 3 0 0 1 4.5 4z"/></svg>
             </div>
             <span class="service-num">05</span>
           </div>
-          <h3>Escale sob demanda. Pague pelo que usa.</h3>
-          <p>Migração, arquitetura e operação na AWS dimensionadas para o seu negócio. FinOps desde o dia um — sem pagar por capacidade ociosa nem ser surpreendido na fatura.</p>
-          <ul class="service-subs">
-            <li>Migração de cargas para AWS</li>
+          <h3>Nuvem AWS</h3>
+          <p>Migração, arquitetura e operação na AWS dimensionadas para o seu negócio. FinOps desde o primeiro dia: sem pagar por capacidade ociosa nem ser surpreendido na fatura.</p>
+          <ul class="check-list">
+            <li>Migração de cargas para a AWS</li>
             <li>Arquitetura e dimensionamento</li>
             <li>EC2 · S3 · RDS · VPC · IAM</li>
             <li>FinOps e governança de custos</li>
             <li>Infraestrutura como código (IaC)</li>
             <li>Operação e monitoramento</li>
           </ul>
-          <a class="service-link" href="#contato">Falar sobre nuvem <span>→</span></a>
+          <a class="text-link" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20nuvem%20AWS." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="servico_nuvem">Falar sobre nuvem <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="service reveal delay-2">
+        <article class="card card-hover service reveal delay-2" id="ia-automacao">
           <div class="service-head">
-            <div class="service-icon" aria-hidden="true">
+            <div class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>
             </div>
             <span class="service-num">06</span>
           </div>
-          <h3>Faça mais com a mesma equipe.</h3>
-          <p>Agentes de IA para atendimento, automação de processos repetitivos e integrações entre sistemas. Você ganha horas por semana sem contratar mais ninguém.</p>
-          <ul class="service-subs">
+          <h3>IA e automação</h3>
+          <p>Agentes de IA para atendimento, automação de processos repetitivos e integrações entre sistemas. Sua equipe ganha horas por semana sem contratar mais ninguém.</p>
+          <ul class="check-list">
             <li>Agentes de IA para atendimento</li>
-            <li>Bots WhatsApp e multicanal</li>
+            <li>Bots para WhatsApp e multicanal</li>
             <li>Automação de processos (n8n / Make)</li>
             <li>Integrações entre sistemas (APIs)</li>
             <li>Implantação e integração de ERPs</li>
           </ul>
-          <a class="service-link" href="#contato">Falar sobre IA e automação <span>→</span></a>
+          <a class="text-link" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20IA%20e%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="servico_ia">Falar sobre IA e automação <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="service reveal">
+        <article class="card card-hover service reveal" id="consultoria">
           <div class="service-head">
-            <div class="service-icon" aria-hidden="true">
+            <div class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
             </div>
             <span class="service-num">07</span>
           </div>
-          <h3>Decisões técnicas com quem conhece seu cenário.</h3>
-          <p>Diagnóstico de ambiente, planejamento de TI e projetos pontuais. Para quando você precisa de orientação estratégica antes de investir — sem compromisso de contrato mensal.</p>
-          <ul class="service-subs">
-            <li>Diagnóstico de ambiente TI</li>
+          <h3>Consultoria de TI</h3>
+          <p>Diagnóstico de ambiente, planejamento de TI e projetos pontuais. Para quando você precisa de orientação técnica antes de investir, sem compromisso de contrato mensal.</p>
+          <ul class="check-list">
+            <li>Diagnóstico de ambiente de TI</li>
             <li>Planejamento estratégico de TI</li>
             <li>Projetos pontuais e assessoria</li>
             <li>Avaliação de fornecedores e soluções</li>
             <li>Gestão de projetos tecnológicos</li>
           </ul>
-          <a class="service-link" href="#contato">Falar sobre consultoria <span>→</span></a>
+          <a class="text-link" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20consultoria%20de%20TI." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="servico_consultoria">Falar sobre consultoria <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="service reveal delay-1">
+        <article class="card card-hover service reveal delay-1" id="sites">
           <div class="service-head">
-            <div class="service-icon" aria-hidden="true">
+            <div class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
             <span class="service-num">08</span>
           </div>
-          <h3>Presença digital que trabalha por você.</h3>
-          <p>Sites institucionais, landing pages e lojas virtuais com foco em conversão. Desenvolvemos, hospedamos e mantemos — você só aparece na frente do cliente.</p>
-          <ul class="service-subs">
+          <h3>Criação de sites</h3>
+          <p>Sites institucionais, landing pages e lojas virtuais com foco em conversão. Desenvolvemos, hospedamos e mantemos. Você só aparece na frente do cliente.</p>
+          <ul class="check-list">
             <li>Sites institucionais</li>
             <li>Landing pages de conversão</li>
             <li>Lojas virtuais (e-commerce)</li>
             <li>Hospedagem e manutenção</li>
             <li>SEO técnico e performance</li>
           </ul>
-          <a class="service-link" href="#contato">Falar sobre sites <span>→</span></a>
+          <a class="text-link" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20cria%C3%A7%C3%A3o%20de%20sites." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="servico_sites">Falar sobre sites <span aria-hidden="true">→</span></a>
         </article>
 
       </div>
@@ -328,66 +426,64 @@
   </section>
 
   <!-- ============== SOBRE ============== -->
-  <section class="section" id="sobre">
+  <section class="section" id="sobre" aria-labelledby="sobre-titulo">
     <div class="container">
       <div class="about-grid">
         <div class="about-copy reveal">
-          <span class="eyebrow" style="margin-bottom:18px; display:inline-flex;">Sobre</span>
-          <h2>Domínio técnico de quem opera, com <span class="accent">presença local</span> em Conceição do Mato Dentro.</h2>
-          <p style="margin-top:26px;">A Plantão nasceu para as empresas da região pararem de improvisar TI e começarem a ter um parceiro técnico de verdade — que assume responsabilidade e entrega previsibilidade.</p>
-          <p>Atuamos com TI gerenciada, segurança, nuvem AWS, consultoria e criação de sites. Atendimento local em Conceição do Mato Dentro com capacidade técnica em cloud, redes e inteligência artificial.</p>
-          <p>Não vendemos hora avulsa de pânico. Vendemos previsibilidade — com SLA escrito, processo claro e gente que atende quando precisar.</p>
+          <span class="eyebrow">Sobre a Plantão</span>
+          <h2 id="sobre-titulo">Domínio técnico de quem opera, com <span class="accent">presença local</span> em Conceição do Mato Dentro.</h2>
+          <p>A Plantão nasceu para que as empresas da região parassem de improvisar TI e passassem a ter um parceiro técnico de verdade: que assume responsabilidade e entrega previsibilidade.</p>
+          <p>Atuamos com TI gerenciada, infraestrutura, segurança, backup, nuvem AWS, IA e automação, consultoria e criação de sites. Atendimento presencial em Conceição do Mato Dentro, com capacidade técnica em nuvem, redes e inteligência artificial.</p>
+          <p>Não vendemos hora avulsa de pânico. Vendemos previsibilidade, com SLA escrito, processo claro e gente que atende quando você precisa.</p>
           <div class="about-cta">
-            <a class="btn btn-dark" href="#contato">Falar com a Plantão <span class="arrow">→</span></a>
+            <a class="btn btn-dark" href="#contato" data-track="cta_click" data-track-label="sobre">Falar com a Plantão <span class="arrow" aria-hidden="true">→</span></a>
             <a class="btn btn-outline" href="#processo">Como trabalhamos</a>
           </div>
         </div>
 
-        <aside class="reveal delay-1" aria-label="Time Plantão Tecnologia">
-          <img src="assets/about-team.jpg"
-               alt="Time da Plantão Tecnologia"
-               width="800"
-               height="600"
-               loading="lazy"
-               decoding="async"
-               style="width:100%;height:auto;border-radius:20px;border:1px solid var(--line);">
-        </aside>
+        <div class="about-visual reveal delay-1">
+          <picture>
+            <source type="image/avif" srcset="assets/about-team-480.avif 480w, assets/about-team-800.avif 800w" sizes="(max-width: 980px) 100vw, 45vw">
+            <source type="image/webp" srcset="assets/about-team-480.webp 480w, assets/about-team-800.webp 800w" sizes="(max-width: 980px) 100vw, 45vw">
+            <img src="assets/about-team.jpg" alt="Ilustração da equipe da Plantão Tecnologia reunida em torno de uma mesa com notebooks" width="800" height="600" loading="lazy" decoding="async">
+          </picture>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ============== DIFERENCIAIS ============== -->
-  <section class="section" id="diferenciais">
+  <section class="section" id="diferenciais" aria-labelledby="diferenciais-titulo">
     <div class="container">
       <header class="section-head reveal">
         <span class="eyebrow">Diferenciais</span>
-        <h2>Quatro coisas que <span class="accent">você sente</span> nos primeiros 30 dias.</h2>
+        <h2 id="diferenciais-titulo">Quatro coisas que <span class="accent">você sente</span> nos primeiros 30 dias.</h2>
       </header>
 
       <div class="diff-grid">
-        <article class="diff reveal">
-          <div class="diff-icon">
+        <article class="card card-hover diff reveal">
+          <div class="icon-box accent" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
           </div>
           <h3>SLA que você assina</h3>
           <p>Janelas de atendimento definidas em contrato. Sem labirinto de protocolo, sem depender da boa vontade do fornecedor.</p>
         </article>
-        <article class="diff reveal delay-1">
-          <div class="diff-icon">
+        <article class="card card-hover diff reveal delay-1">
+          <div class="icon-box accent" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v6c0 5-4 7.5-8 8-4-.5-8-3-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg>
           </div>
           <h3>Segurança de verdade</h3>
-          <p>Firewall, EDR e backup testado. Tratamos seus dados com a mesma paranoia que tratamos os nossos.</p>
+          <p>Firewall, EDR e backup testado. Tratamos os seus dados com o mesmo cuidado que tratamos os nossos.</p>
         </article>
-        <article class="diff reveal delay-2">
-          <div class="diff-icon">
+        <article class="card card-hover diff reveal delay-2">
+          <div class="icon-box accent" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18"/><path d="M5 12c2-3 5-3 7 0s5 3 7 0"/><path d="M5 7h14"/></svg>
           </div>
           <h3>Nuvem no tamanho certo</h3>
           <p>AWS dimensionada pelo seu volume real. Nenhuma arquitetura de startup sendo cobrada do seu CNPJ.</p>
         </article>
-        <article class="diff reveal delay-3">
-          <div class="diff-icon">
+        <article class="card card-hover diff reveal delay-3">
+          <div class="icon-box accent" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8M12 8v8"/></svg>
           </div>
           <h3>Automação que libera tempo</h3>
@@ -398,58 +494,105 @@
   </section>
 
   <!-- ============== PROCESSO ============== -->
-  <section class="section" id="processo">
+  <section class="section" id="processo" aria-labelledby="processo-titulo">
     <div class="container">
       <header class="section-head reveal">
-        <span class="eyebrow">Como trabalhamos</span>
-        <h2>Um processo curto, porque <span class="accent">tempo de resposta</span> faz parte do produto.</h2>
+        <span class="eyebrow">Como funciona</span>
+        <h2 id="processo-titulo">Um processo curto, porque <span class="accent">tempo de resposta</span> faz parte do produto.</h2>
       </header>
 
-      <div class="process-list">
-        <article class="process-step reveal">
-          <div class="process-num">01</div>
+      <ol class="process-list">
+        <li class="card process-step reveal">
+          <div class="process-num" aria-hidden="true">01</div>
           <div>
             <h3>Diagnóstico técnico</h3>
-            <p>Visita ou call com seu time, levantamento do ambiente atual e mapeamento de riscos. Saímos com clareza sobre o que precisa mudar — não com promessa.</p>
+            <p>Visita ou chamada com o seu time, levantamento do ambiente atual e mapeamento de riscos. Saímos com clareza sobre o que precisa mudar, não com promessa.</p>
           </div>
-        </article>
-        <article class="process-step reveal delay-1">
-          <div class="process-num">02</div>
+        </li>
+        <li class="card process-step reveal delay-1">
+          <div class="process-num" aria-hidden="true">02</div>
           <div>
             <h3>Proposta sob medida</h3>
             <p>Escopo claro, tecnologia escolhida para o seu cenário, SLA combinado e investimento sem letra miúda. Discutimos juntos antes de fechar.</p>
           </div>
-        </article>
-        <article class="process-step reveal">
-          <div class="process-num">03</div>
+        </li>
+        <li class="card process-step reveal">
+          <div class="process-num" aria-hidden="true">03</div>
           <div>
             <h3>Implantação e onboarding</h3>
             <p>Execução documentada, transferência de conhecimento e checkpoints no calendário. Você sabe quando, quem e como em cada etapa.</p>
           </div>
-        </article>
-        <article class="process-step reveal delay-1">
-          <div class="process-num">04</div>
+        </li>
+        <li class="card process-step reveal delay-1">
+          <div class="process-num" aria-hidden="true">04</div>
           <div>
             <h3>Operação acompanhada</h3>
-            <p>Monitoramento contínuo, atendimento sob SLA e reuniões periódicas de evolução. A Plantão não some depois da entrega.</p>
+            <p>Monitoramento contínuo, atendimento dentro do SLA e reuniões periódicas de evolução. A Plantão não some depois da entrega.</p>
           </div>
-        </article>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============== FAQ ============== -->
+  <section class="section alt" id="faq" aria-labelledby="faq-titulo">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-aside reveal">
+          <header class="section-head">
+            <span class="eyebrow">Dúvidas frequentes</span>
+            <h2 id="faq-titulo">O que as empresas perguntam <span class="accent">antes de fechar</span> com a Plantão.</h2>
+            <p class="lead">Não achou a sua dúvida? Mande pelo WhatsApp e respondemos em horário comercial.</p>
+          </header>
+          <a class="btn btn-wa" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20os%20servi%C3%A7os%20da%20Plant%C3%A3o." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="faq">Perguntar no WhatsApp</a>
+        </div>
+
+        <div class="faq-list reveal delay-1">
+          <details class="card faq">
+            <summary>Vocês atendem só em Conceição do Mato Dentro?</summary>
+            <div class="faq-body"><p>O atendimento presencial é em Conceição do Mato Dentro e região. Suporte remoto, nuvem, automação e criação de sites são atendidos para empresas de todo o Brasil.</p></div>
+          </details>
+          <details class="card faq">
+            <summary>Preciso fechar um contrato mensal para ser atendido?</summary>
+            <div class="faq-body"><p>Não. A TI gerenciada funciona por contrato com SLA, mas consultoria, diagnóstico de ambiente e projetos pontuais são contratados sem compromisso mensal.</p></div>
+          </details>
+          <details class="card faq">
+            <summary>O que é SLA e por que ele está em contrato?</summary>
+            <div class="faq-body"><p>SLA é o acordo de nível de serviço: define prazos de resposta e de solução para cada tipo de chamado. Ele fica escrito no contrato para que você saiba o que esperar, sem depender da boa vontade do fornecedor.</p></div>
+          </details>
+          <details class="card faq">
+            <summary>Minha empresa é pequena. Faz sentido contratar a Plantão?</summary>
+            <div class="faq-body"><p>Sim. Cada frente de serviço pode ser contratada em separado e a infraestrutura é dimensionada pelo seu volume real, não por uma empresa dez vezes maior.</p></div>
+          </details>
+          <details class="card faq">
+            <summary>Como funciona o primeiro contato?</summary>
+            <div class="faq-body"><p>Você conta o que está acontecendo pelo WhatsApp ou pelo formulário. Em seguida agendamos um diagnóstico técnico, por visita ou chamada, e só depois enviamos uma proposta com escopo, SLA e investimento definidos.</p></div>
+          </details>
+          <details class="card faq">
+            <summary>Como é o suporte no dia a dia?</summary>
+            <div class="faq-body"><p>Os chamados são abertos pela <a href="https://chamados.plantaotec.com.br/front/central.php" target="_blank" rel="noopener">Área do Cliente</a> ou pelo WhatsApp, atendidos de forma remota ou em campo dentro do SLA combinado, e você recebe relatórios periódicos de funcionamento do ambiente.</p></div>
+          </details>
+          <details class="card faq">
+            <summary>Qual é o horário de atendimento?</summary>
+            <div class="faq-body"><p>Atendimento humano de segunda a sexta, das 8h às 18h. Janelas diferentes são combinadas em contrato conforme o SLA.</p></div>
+          </details>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============== CTA banner ============== -->
-  <section class="section tight" id="cta">
+  <!-- ============== CTA ============== -->
+  <section class="section tight" id="cta" aria-labelledby="cta-titulo">
     <div class="container">
       <div class="cta-banner reveal">
         <div class="cta-banner-inner">
           <div>
-            <h2>Vamos olhar a sua TI <span class="accent">com calma</span> antes de propor qualquer coisa.</h2>
-            <p>Conte o que está acontecendo na sua operação. Retornamos com perguntas certas e uma agenda de diagnóstico.</p>
+            <h2 id="cta-titulo">Vamos olhar a sua TI <span class="accent">com calma</span> antes de propor qualquer coisa.</h2>
+            <p>Conte o que está acontecendo na sua operação. Retornamos com as perguntas certas e uma agenda de diagnóstico.</p>
           </div>
           <div class="right">
-            <a class="btn btn-primary btn-lg" href="#contato">Fale Conosco <span class="arrow">→</span></a>
-            <a class="btn btn-outline btn-lg" style="background:transparent; color:#fff; border-color: rgba(255,255,255,0.25);" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Plant%C3%A3o%20Tecnologia." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            <a class="btn btn-primary btn-lg" href="#contato" data-track="cta_click" data-track-label="banner">Solicitar diagnóstico <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-on-dark btn-lg" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Plant%C3%A3o%20Tecnologia." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="banner">Chamar no WhatsApp</a>
           </div>
         </div>
       </div>
@@ -457,68 +600,76 @@
   </section>
 
   <!-- ============== CONTATO ============== -->
-  <section class="section" id="contato">
+  <section class="section" id="contato" aria-labelledby="contato-titulo">
     <div class="container">
       <header class="section-head reveal">
         <span class="eyebrow">Contato</span>
-        <h2>Conte o que <span class="accent">está acontecendo</span>. A Plantão entra em contato.</h2>
+        <h2 id="contato-titulo">Conte o que <span class="accent">está acontecendo</span>. A Plantão entra em contato.</h2>
       </header>
 
       <div class="contact-grid">
-        <aside class="contact-info reveal">
+        <aside class="contact-info reveal" aria-label="Canais de contato">
           <div>
-            <div class="label">WhatsApp / Telefone</div>
-            <div class="value"><a href="https://wa.me/5531971317496" target="_blank" rel="noopener">(31) 97131-7496</a></div>
-            <div class="helper">Atendimento humano de segunda a sexta, das 8h às 18h.</div>
+            <span class="label">WhatsApp / Telefone</span>
+            <div class="value"><a href="https://wa.me/5531971317496" target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="contato">(31) 97131-7496</a></div>
+            <p class="helper">Atendimento humano de segunda a sexta, das 8h às 18h.</p>
           </div>
           <div>
-            <div class="label">E-mail</div>
-            <div class="value"><a href="mailto:contato@plantaotec.com.br">contato@plantaotec.com.br</a></div>
-            <div class="helper">Para propostas, dúvidas e parcerias.</div>
+            <span class="label">E-mail</span>
+            <div class="value"><a href="mailto:contato@plantaotec.com.br" data-track="email_click" data-track-label="contato">contato@plantaotec.com.br</a></div>
+            <p class="helper">Para propostas, dúvidas e parcerias.</p>
           </div>
           <div>
-            <div class="label">Atuação</div>
+            <span class="label">Atuação</span>
             <div class="value">Conceição do Mato Dentro e região</div>
-            <div class="helper">Atendimento presencial local + remoto para todo o Brasil.</div>
+            <p class="helper">Atendimento presencial local e remoto para todo o Brasil.</p>
           </div>
           <div>
-            <div class="label">Redes</div>
-            <div class="value" style="font-size:15px; font-weight:500;">
-              <a href="https://www.instagram.com/plantaotecnologia/" target="_blank" rel="noopener">Instagram</a> ·
-              <a href="https://www.linkedin.com/company/102269554" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="label">Redes</span>
+            <div class="value social">
+              <a href="https://www.instagram.com/plantaotecnologia/" target="_blank" rel="noopener" data-track="social_click" data-track-label="instagram">Instagram</a>
+              <a href="https://www.linkedin.com/company/102269554" target="_blank" rel="noopener" data-track="social_click" data-track-label="linkedin">LinkedIn</a>
             </div>
           </div>
         </aside>
 
-        <form class="form-card reveal delay-1" id="leadForm" novalidate>
+        <form class="card form-card reveal delay-1" id="leadForm" action="#contato" method="post" novalidate>
           <div class="form-row">
             <div class="field">
-              <label for="f-nome">Nome <span class="req">*</span></label>
-              <input id="f-nome" name="nome" type="text" placeholder="Seu nome completo" required autocomplete="name" />
+              <label for="f-nome">Nome <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-nome" name="nome" type="text" placeholder="Seu nome" required autocomplete="name" aria-describedby="e-nome" maxlength="80">
+              <span class="field-error" id="e-nome">Informe o seu nome.</span>
             </div>
             <div class="field">
               <label for="f-empresa">Empresa</label>
-              <input id="f-empresa" name="empresa" type="text" placeholder="Nome da sua empresa" autocomplete="organization" />
+              <input id="f-empresa" name="empresa" type="text" placeholder="Nome da sua empresa" autocomplete="organization" maxlength="80">
             </div>
           </div>
           <div class="form-row">
             <div class="field">
-              <label for="f-tel">Telefone <span class="req">*</span></label>
-              <input id="f-tel" name="telefone" type="tel" placeholder="(31) 9 0000-0000" required autocomplete="tel" />
+              <label for="f-tel">WhatsApp / Telefone <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-tel" name="telefone" type="tel" inputmode="tel" placeholder="(31) 90000-0000" required autocomplete="tel" aria-describedby="e-tel" maxlength="15">
+              <span class="field-error" id="e-tel">Informe um telefone com DDD.</span>
             </div>
             <div class="field">
-              <label for="f-email">E-mail <span class="req">*</span></label>
-              <input id="f-email" name="email" type="email" placeholder="voce@empresa.com.br" required autocomplete="email" />
+              <label for="f-email">E-mail <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-email" name="email" type="email" inputmode="email" placeholder="voce@empresa.com.br" required autocomplete="email" aria-describedby="e-email" maxlength="120">
+              <span class="field-error" id="e-email">Informe um e-mail válido.</span>
             </div>
           </div>
           <div class="field">
-            <label for="f-msg">Como podemos ajudar? <span class="req">*</span></label>
-            <textarea id="f-msg" name="mensagem" placeholder="Descreva brevemente seu cenário ou demanda." required></textarea>
+            <label for="f-msg">Como podemos ajudar? <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-msg" name="mensagem" placeholder="Descreva brevemente o seu cenário ou a sua demanda." required aria-describedby="e-msg" maxlength="1000"></textarea>
+            <span class="field-error" id="e-msg">Conte em poucas palavras o que está acontecendo.</span>
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label for="f-site">Não preencha este campo</label>
+            <input id="f-site" name="site" type="text" tabindex="-1" autocomplete="off">
           </div>
 
           <div class="form-actions">
-            <p class="form-note">Ao enviar, você abre uma conversa no WhatsApp com seus dados pré-preenchidos.</p>
-            <button class="btn btn-primary btn-lg" type="submit">Enviar mensagem <span class="arrow">→</span></button>
+            <p class="form-note">Ao enviar, você abre uma conversa no WhatsApp com esses dados. Nada fica armazenado neste site. <a href="privacidade">Política de privacidade</a>.</p>
+            <button class="btn btn-primary btn-lg" type="submit" id="submitBtn">Enviar pelo WhatsApp <span class="arrow" aria-hidden="true">→</span></button>
           </div>
           <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
         </form>
@@ -528,58 +679,65 @@
   </main>
 
   <!-- ============== FOOTER ============== -->
-  <footer>
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#home" class="logo" aria-label="Plantão Tecnologia">
-            <img src="assets/logo.png" alt="Plantão Tecnologia" height="64" loading="lazy" style="display:block;">
+          <a href="#home" class="logo" aria-label="Plantão Tecnologia — início">
+            <picture>
+              <source srcset="assets/logo-nav.webp" type="image/webp">
+              <img src="assets/logo-nav.png" alt="Plantão Tecnologia" width="142" height="56" loading="lazy">
+            </picture>
           </a>
-          <p>Tecnologia que mantém sua empresa funcionando. Suporte, infraestrutura, segurança, nuvem AWS e IA aplicada — em Conceição do Mato Dentro e região.</p>
+          <p>Tecnologia que mantém a sua empresa funcionando. Suporte, infraestrutura, segurança, nuvem AWS e IA aplicada, em Conceição do Mato Dentro e região.</p>
         </div>
-        <div class="footer-col">
-          <h5>Soluções</h5>
+        <nav class="footer-col" aria-label="Serviços">
+          <h2>Serviços</h2>
           <ul>
-            <li><a href="#servicos">Suporte e TI gerenciada</a></li>
-            <li><a href="#servicos">Infraestrutura e redes</a></li>
-            <li><a href="#servicos">Segurança da informação</a></li>
-            <li><a href="#servicos">Backup e continuidade</a></li>
-            <li><a href="#servicos">Nuvem AWS</a></li>
-            <li><a href="#servicos">IA e automação</a></li>
+            <li><a href="#suporte-ti">Suporte e TI gerenciada</a></li>
+            <li><a href="#infraestrutura">Infraestrutura e redes</a></li>
+            <li><a href="#seguranca">Segurança da informação</a></li>
+            <li><a href="#backup">Backup e continuidade</a></li>
+            <li><a href="#nuvem-aws">Nuvem AWS</a></li>
+            <li><a href="#ia-automacao">IA e automação</a></li>
+            <li><a href="#consultoria">Consultoria de TI</a></li>
+            <li><a href="#sites">Criação de sites</a></li>
           </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Empresa</h5>
+        </nav>
+        <nav class="footer-col" aria-label="Empresa">
+          <h2>Empresa</h2>
           <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#diferenciais">Diferenciais</a></li>
-            <li><a href="#processo">Processo</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#processo">Como funciona</a></li>
+            <li><a href="#faq">Dúvidas frequentes</a></li>
+            <li><a href="https://chamados.plantaotec.com.br/front/central.php" target="_blank" rel="noopener" data-track="area_cliente" data-track-label="footer">Área do Cliente</a></li>
           </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Contato</h5>
+        </nav>
+        <nav class="footer-col" aria-label="Contato">
+          <h2>Contato</h2>
           <ul>
-            <li><a href="https://wa.me/5531971317496" target="_blank" rel="noopener">(31) 97131-7496</a></li>
-            <li><a href="mailto:contato@plantaotec.com.br">contato@plantaotec.com.br</a></li>
-            <li><a href="https://www.instagram.com/plantaotecnologia/" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/company/102269554" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://wa.me/5531971317496" target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="footer">(31) 97131-7496</a></li>
+            <li><a href="mailto:contato@plantaotec.com.br" data-track="email_click" data-track-label="footer">contato@plantaotec.com.br</a></li>
+            <li><a href="https://www.instagram.com/plantaotecnologia/" target="_blank" rel="noopener" data-track="social_click" data-track-label="instagram_footer">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/102269554" target="_blank" rel="noopener" data-track="social_click" data-track-label="linkedin_footer">LinkedIn</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
       <div class="footer-bottom">
         <span>© <span id="y">2026</span> Plantão Tecnologia · Conceição do Mato Dentro / MG</span>
+        <a href="privacidade">Política de privacidade</a>
       </div>
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Plant%C3%A3o%20Tecnologia." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+  <a class="wa-float" href="https://wa.me/5531971317496?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Plant%C3%A3o%20Tecnologia." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="flutuante">
     <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
       <path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.5.7 4.9 2 7L3 29l6.7-2.3c2 1.1 4.3 1.7 6.6 1.7 6.9 0 12.5-5.5 12.5-12.5C28.8 8.6 23.2 3 16 3zm0 22.7c-2 0-4-.6-5.7-1.6l-.4-.2-4 1.4 1.4-3.9-.3-.4c-1.2-1.8-1.8-3.9-1.8-6.1 0-5.9 4.8-10.7 10.8-10.7 2.9 0 5.6 1.1 7.6 3.1 2 2 3.1 4.7 3.1 7.6 0 5.9-4.8 10.8-10.7 10.8zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/>
     </svg>
     <span class="lbl">Fale pelo WhatsApp</span>
   </a>
 
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=20260906" defer></script>
 </body>
 </html>
