@@ -1,2 +1,11 @@
 docker-compose*.yml
 .dockerignore
+.git/
+.gitignore
+.playwright-mcp/
+.agents/
+.claude/
+docs/
+*.md
+repomix-output.xml
+skills-lock.json
